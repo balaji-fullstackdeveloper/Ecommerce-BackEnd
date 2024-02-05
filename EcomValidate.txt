@@ -1,0 +1,262 @@
+To Create a new User =>POST Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/register
+
+JSON DATA
+
+{
+    "name": "BALAJI",
+    "email": "new@gmail.com",
+    "password": "123456",
+    "avatar": "user_9687123.jpg"
+}
+
+
+
+To Login a User =>POST Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/login
+
+JSON DATA
+
+{
+    "email": "new@gmail.com",
+    "password": "123456"
+}
+
+
+
+To Logout a User =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/logout
+
+
+
+Forgot Password =>POST Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/password/forgot
+
+
+
+To Reset a Password =>POST Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/password/reset/:token
+
+
+
+To Get User Profile =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/myprofile
+
+
+
+To Change a Password =>PUT Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/password/change
+
+JSON DATA
+
+{
+    "oldPassword":"123456",
+    "password":"12345"
+}
+
+
+To Update Profile =>PUT Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/update
+
+JSON DATA
+
+{
+    "name":"Balaji",
+    "email":"balaji@mail.com"
+    
+}
+
+
+
+To Get a Single Product =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/product/65c0c62ba0026321093bd990
+
+
+
+To Get Products with Filter Option =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/products?page=1&price[gte]=200
+
+
+To Create Review =>PUT Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/review
+
+JSON DATA
+
+{
+    "rating":3.5,
+    "comment":"Nice",
+    "productId":"65c0c62ba0026321093bd990"
+}
+
+
+To Get Reviews =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/reviews?id=65c0c62ba0026321093bd990
+
+To Create New Order =>POST Resquest
+
+https://ecommerce-lgp5.onrender.com/api/v1/order/new
+
+JSON DATA
+
+{
+    "orderItems":[
+        {"product": "65c0c62ba0026321093bd990",
+        "name":"New Phones",
+        "price": 440.57,
+        "image": "image",
+        "quantity":1 }
+    ],
+    "itemsPrice": 44.32,
+    "taxPrice": 0.22,
+    "shippingPrice": 25,
+    "totalPrice":456.32,
+    "shippingInfo":{
+        "address": "345 Main Road",
+        "city": "Chennai",
+        "country": "India",
+        "postalCode":"600478",
+        "phoneNo":"987348734"
+    },
+    "paymentInfo":{
+        "id": "fsdlkqwuy24587sdfhs",
+        "status":"success"
+    }
+
+
+}
+
+
+
+
+To Get Single User Orders =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/order/65c0d6521b18b774258220ad
+
+
+
+
+To Get User Orders =>GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/myorders
+
+
+******************ADMIN ROUTES*************
+
+To Get All Users => Get Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/admin/users
+
+
+
+To Get Specific User => Get Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/admin/user/65c0c534a0026321093bd989
+
+
+
+
+To Update User => PUT Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/admin/user/65c0c534a0026321093bd989
+
+
+
+
+To Delete User => DELETE Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/admin/user/65c0be8aa0026321093bd980
+
+
+
+
+To Get All Orders => GET Request
+
+https://ecommerce-lgp5.onrender.com/api/v1/admin/orders
+
+
+
+
+To Update Order Status
+
+https://ecommerce-lgp5.onrender.com/api/v1/order/65c0d6521b18b774258220ad
+
+JSON DATA
+
+{
+    "orderStatus":"packed"
+}
+
+
+To Delete an Order
+
+https://ecommerce-lgp5.onrender.com/api/v1/order/:id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
