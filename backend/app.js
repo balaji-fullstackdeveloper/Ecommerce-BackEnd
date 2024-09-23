@@ -6,7 +6,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config({ path: path.join(__dirname, "config/config.env") });
 const cors = require("cors");
-
+app.use(cors())
 
 app.use(express.json());
 app.use(cookieParser());
