@@ -6,7 +6,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config({ path: path.join(__dirname, "config/config.env") });
 const cors = require("cors");
-app.use(cors({ origin: "https://main--thunderous-croissant-c12998.netlify.app" }))
+app.use(cors({ credentials: true,origin: "https://main--thunderous-croissant-c12998.netlify.app" }))
 app.use((req, res, next) => {
   res.setHeader(
     "Cache-Control",
