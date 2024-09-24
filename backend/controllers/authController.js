@@ -79,7 +79,7 @@ exports.forgotPassword = catchAsyncError( async (req, res, next)=>{
     const resetToken = user.getResetToken();
     await user.save({validateBeforeSave: false})
     
-    let BASE_URL = process.env.FRONTEND_URL;
+    let BASE_URL = "https://66f154213e2f92e1e894908a--thunderous-croissant-c12998.netlify.app";
     if(process.env.NODE_ENV === "production"){
         BASE_URL = `${req.protocol}://${req.get('host')}`
     }
