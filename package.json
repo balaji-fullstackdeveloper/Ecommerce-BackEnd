@@ -9,7 +9,7 @@
     "prod": "set NODE_ENV=production&&nodemon backend/server.js",
     "seeder": "node backend/utils/seeder.js"
   },
-  "author": "JV Logesh",
+  "author": "Balaji",
   "license": "ISC",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
@@ -23,6 +23,7 @@
     "mongoose": "^6.8.0",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.8.0",
+    "razorpay": "^2.9.5",
     "stripe": "^11.9.1",
     "validator": "^13.7.0"
   },
