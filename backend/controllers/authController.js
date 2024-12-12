@@ -227,8 +227,7 @@ exports.forgotPassword = catchAsyncError(async (req, res, next) => {
   const resetToken = user.getResetToken();
   await user.save({ validateBeforeSave: false });
 
-  let BASE_URL =
-    "https://66f154213e2f92e1e894908a--thunderous-croissant-c12998.netlify.app";
+  let BASE_URL = process.env.FRONTEND_URL;
 
   //Create reset url
   const resetUrl = `${BASE_URL}/password/reset/${resetToken}`;
