@@ -4,7 +4,7 @@
   "description": "ecommerce using MERN stack",
   "main": "backend/server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "set NODE_ENV=development&&node server.js",
     "prod": "set NODE_ENV=production&&node server.js",
     "seeder": "node backend/utils/seeder.js"
