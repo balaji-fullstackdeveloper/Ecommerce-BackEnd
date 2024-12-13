@@ -1,12 +1,12 @@
 {
-  "name": "jvlcart",
+  "name": "ecommerce",
   "version": "1.0.0",
   "description": "ecommerce using MERN stack",
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
     "start": "nodemon backend/server.js",
     "dev": "set NODE_ENV=development&&nodemon backend/server.js",
-    "prod": "set NODE_ENV=production&&nodemon backend/server.js",
+    "prod": "set NODE_ENV=production&&node backend/server.js",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Balaji",
