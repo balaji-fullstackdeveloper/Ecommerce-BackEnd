@@ -4,9 +4,9 @@
   "description": "ecommerce using MERN stack",
   "main": "backend/server.js",
   "scripts": {
-    "start": "nodemon backend/server.js",
-    "dev": "set NODE_ENV=development&&nodemon backend/server.js",
-    "prod": "set NODE_ENV=production&&node backend/server.js",
+    "start": "nodemon server.js",
+    "dev": "set NODE_ENV=development&&nodemon server.js",
+    "prod": "set NODE_ENV=production&&node server.js",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Balaji",
