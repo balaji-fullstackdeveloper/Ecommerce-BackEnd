@@ -4,7 +4,7 @@ const router = express.Router();
 const {isAuthenticatedUser, authorizeRoles} = require('../middlewares/authenticate');
 
 router.route('/order/new').post(isAuthenticatedUser,newOrder);
-router.route('/order/:id').get(isAuthenticatedUser,getSingleOrder);
+router.route('/order/:id').get(getSingleOrder);
 router.route('/myorders').get(isAuthenticatedUser,myOrders);
 
 //Admin Routes
