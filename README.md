@@ -7,7 +7,7 @@ https://github.com/balaji-fullstackdeveloper/Ecommerce-FrontEnd
 
 ## Front End Deploy URL
 
-https://66f154213e2f92e1e894908a--thunderous-croissant-c12998.netlify.app/
+https://ecommerce-frontend-balaji.netlify.app/
 
 
 ##Instruction
@@ -16,12 +16,6 @@ after cloning, run this command in the root folder
 ```bash
 npm install
 ```
-navigate to "frontend" folder, run these commands 
-```bash
-npm install
-npm run build
-```
-wait for application build
 after that open the backend/config/config.env
 and update the MongoDB connection string
 ```bash
